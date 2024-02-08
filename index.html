@@ -10,18 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>5S contabilidade</title>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <div class="logo-header">
-                <p>texto</p>
+            <div class="logo-header" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000"> 
+                <img src="assets/logo.svg" alt="">
             </div>
-            <nav class="nav-container">
-                <a>Sobre nós</a>
-                <a>Serviços</a>
-                <a>Fale Conosco</a>
+            <nav class="nav-container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+                <a href="#services">Serviços</a>
+                <a href="#about_us">Sobre nós</a>
+                <a href="#location">Fale Conosco</a>
             </nav>
         </div>
     </header>
@@ -34,47 +36,47 @@
             </a>
         </div>
     </main>
-    <div class="service_title container">
+    <div class="service_title container" id="services">
         <H1>Nossos serviços</H1>
     </div>
-    <section class="services">
+    <section class="services" >
         <div class="grid-container">
-            <div class="service_details">
+            <div class="service_details" data-aos-delay="150" data-aos="fade-right">
                 <img src="https://5scontabilidade.com.br/wp-content/uploads/2023/07/5ff7339060daf98ecfa149e9f7f21c169ad4f7ae.jpg" alt="">
                 <h1>Contabilidade Completa</h1>
                 <div class="flex_p">     
                     <p>A sua empresa terá uma contabilidade, onde cuidaremos de todas as obrigações perante o governo.</p>
                 </div>
             </div>
-            <div class="service_details">
+            <div class="service_details" data-aos-delay="250" data-aos="fade-right">
                 <img src="https://5scontabilidade.com.br/wp-content/uploads/2023/07/calcular-multa-rescisoria.jpg" alt="">
                 <h1>Depto. Fiscal e Tributário</h1>
                 <div class="flex_p">
                     <p>Gestão Fiscal, Planejamento tributário e assessoria constante para te ajudar na vida financeira da sua empresa.</p>
                 </div>
             </div>
-            <div class="service_details">
+            <div class="service_details" data-aos-delay="350" data-aos="fade-right">
                 <img src="https://5scontabilidade.com.br/wp-content/uploads/2023/07/Funcoes-do-Departamento-Pessoal-1.png" alt="">
                 <h1>Gestāo de Depto. Pessoal</h1>
                 <div class="flex_p">
                     <p>Cuidaremos dos cálculos e emissões de folha de pagamento, 13° salário, férias, admissão, demissão, entre outros serviços.</p>
                 </div>
             </div>
-            <div class="service_details">
+            <div class="service_details" data-aos-delay="150" data-aos="fade-right">
                 <img src="https://5scontabilidade.com.br/wp-content/uploads/2023/07/235195-tudo-sobre-tipos-societarios-e-suas-caracteristicas-1024x682.jpg" alt="">
                 <h1>Serviços Societários</h1>
                 <div class="flex_p">
                     <p>A sua empresa possui sócios? fique tranquilo nós cuidaremos de todos os processos legais e administrativos.</p>
                 </div>
             </div>
-            <div class="service_details">
+            <div class="service_details" data-aos-delay="250" data-aos="fade-right">
                 <img src="https://5scontabilidade.com.br/wp-content/uploads/2023/07/179.png" alt="">
                 <h1>Imposto de renda</h1>
                 <div class="flex_p">
                     <p>Dispomos de uma equipe qualificada e pronta para realizar as declarações de imposto de renda para PF e PJ.</p>
                 </div>
             </div>
-            <div class="service_details">
+            <div class="service_details" data-aos-delay="350" data-aos="fade-right">
                 <img src="https://5scontabilidade.com.br/wp-content/uploads/2023/07/lider-contabil-aprenda-a-criar-uma-equipe-de-alta-performance32237.jpg" alt="">
                 <h1>Outros Serviços</h1>
                 <div class="flex_p">
@@ -83,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="about container">
+    <section class="about container" id="about_us">
         <div class="about_us">
             <img src="https://5scontabilidade.com.br/wp-content/uploads/2023/07/Foto-1024x787.png" alt="">
             <div class="our_company">
@@ -96,13 +98,13 @@
     </section>
     <section class="benefits container">
         <h1>Veja quais benefícios você e sua empresa terão ao fazer a contabilidade com a gente:</h1>
-        <p><span><i class="fas fa-check"></i></span>Serviços pertinentes ao departamento pessoal de sua empresa</p>
-        <p><span><i class="fas fa-check"></i></span>Declaração de Imposto de Renda</p>
-        <p><span><i class="fas fa-check"></i></span>Relatórios mensais da gestão contábil</p>
-        <p><span><i class="fas fa-check"></i></span>Realização de diversos cálculos contábeis para sua empresa</p>
-        <p><span><i class="fas fa-check"></i></span>Softwares de troca de documentos entre contador x cliente</p>
-        <p><span><i class="fas fa-check"></i></span>Diversos canais de atendimento para suporte ao cliente</p>
-        <p><span><i class="fas fa-check"></i></span>Gestão completa dos serviços contábeis para sua empresa</p>
+        <p data-aos-delay="50" data-aos="fade-right"><span><i class="fas fa-check"></i></span>Serviços pertinentes ao departamento pessoal de sua empresa</p>
+        <p data-aos-delay="100" data-aos="fade-right"><span><i class="fas fa-check"></i></span>Declaração de Imposto de Renda</p>
+        <p data-aos-delay="150" data-aos="fade-right"><span><i class="fas fa-check"></i></span>Relatórios mensais da gestão contábil</p>
+        <p data-aos-delay="200" data-aos="fade-right"><span><i class="fas fa-check"></i></span>Realização de diversos cálculos contábeis para sua empresa</p>
+        <p data-aos-delay="250" data-aos="fade-right"><span><i class="fas fa-check"></i></span>Softwares de troca de documentos entre contador x cliente</p>
+        <p data-aos-delay="300" data-aos="fade-right"><span><i class="fas fa-check"></i></span>Diversos canais de atendimento para srightorte ao cliente</p>
+        <p data-aos-delay="350" data-aos="fade-right"><span><i class="fas fa-check"></i></span>Gestão completa dos serviços contábeis para sua empresa</p>
     </section>
     <section class="location">
         <div class="location_content">
@@ -114,25 +116,31 @@
     <footer>
         <div class="footer_container">
             <div class="footer_logo">
-                <h1>Teste</h1>
+                <img src="assets/logo.svg" alt="">
             </div>
             <div class="footer_icons">
-                <a href="#">
+                <a href="https://www.instagram.com/arturoburigo/" target="_blank">
                     <i class="fa-brands fa-instagram fa-2x"></i>
                 </a>    
-                <a href="#">
+                <a href="https://www.instagram.com/arturoburigo/" target="_blank">
                     <i class="fa-brands fa-facebook fa-2x"></i>
                 </a>    
-                <a href="#">
-                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=55488880-0697&amp;text=Olá, estou entrando em contato através do seu site, gostei muito do site que vi e gostaria de conversar sobre."">
+                    <i class="fa-brands fa-whatsapp fa-2x" target="_blank"></i>
                 </a> 
             </div>
-            <div class="footer_contact_us">
+            <div class="footer_contact_us" id="location">
                 <h1>Fale conosco</h1>
-                <a href=""><i class="fas fa-envelope"></i> arturoburigo@hotmail.com</a>
-                <a href=""><i class="fas fa-phone"></i> (48) 9 8880-0697</a>
+                <a href="mailto:arturoburigo@hotmail.com?subject=Interesse%20em%20seus%20servi%C3%A7os&body=Vi%20um%20de%20seus%20sites%20e%20tenho%20interesse%20em%20conversar%20e%20entender%20mais%20sobre"><i class="fas fa-envelope"></i> arturoburigo@hotmail.com</a>
+                <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=55488880-0697&amp;text=Olá, estou entrando em contato através do seu site, gostei muito do site que vi e gostaria de conversar sobre."><i class="fas fa-phone"></i> (48) 9 8880-0697</a>
             </div>
         </div>
     </footer>
+    <a class="btn-whatsapp" href="https://api.whatsapp.com/" target="_blank" data-aos="zoom-in-up" data-aos-delay="100">
+        <img src="assets/whatssapp.svg" alt="whatsapp log">
+        <span class="tooltip-text">Agende seu horário</span>
+    </a>    
+    <script src="script.js"></script>
 </body>
 </html>
+ 

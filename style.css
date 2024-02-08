@@ -135,6 +135,11 @@ a {
     height: 80vh;
   }
 }
+@media (max-width: 768px) {
+  .nav-container a {
+    font-size: 14px;
+  }
+}
 .about {
   background-image: linear-gradient(to bottom, #000000, #007bff); /* Preto escuro para azul claro */
   width: 100%;
@@ -243,6 +248,7 @@ footer {
 }
 
 .footer_contact_us {
+  margin-right: 20px;
   padding: 20px 0px;
   display: flex;
   flex-direction: column;
@@ -268,11 +274,57 @@ footer {
     margin-bottom: 3px;
   }
 }
+.btn-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  width: 74px;
+  transition: transform 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.11);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  text-align: center;
+  background-color: #232224;
+  opacity: 0;
+  border-radius: 8px;
+  padding: 4px;
+  transition: opacity 0.4s;
+  color: #fff;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-whatsapp {
+    margin-right: 10px;
+  }
+  .btn-whatsapp img {
+    max-width: 64px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
+}
+
+html {
+  scroll-behavior: smooth; /* Adiciona rolagem suave em todo o documento */
 }
 
 body {

@@ -95,12 +95,21 @@ a{
 
     .content {
         height: 60vh;
+
     }
 }
 
 @media (max-width: 468px) {
     .content {
         height: 80vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        a {
+            font-size: 14px;
+        }
     }
 }
 
@@ -221,6 +230,7 @@ footer {
     h1 {
         margin-bottom: 4px;
     }
+    margin-right: 20px;
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
@@ -271,13 +281,13 @@ footer {
     width: 120px;
     top: 8px;
     left: -144px;
-    background-color: $black-normal;
     text-align: center;
+    background-color: #232224;
     opacity: 0;
     border-radius: 8px;
     padding: 4px;
     transition: opacity 0.4s;
-    color: $white-normal;
+    color: #fff;
 }
 
 .btn-whatsapp:hover .tooltip-text{
@@ -285,3 +295,11 @@ footer {
     opacity: 1;
 }
 
+@media screen and (max-width: 768px){
+    .btn-whatsapp{
+        margin-right: 10px;
+        img{
+            max-width: 64px;
+        }
+    }
+}

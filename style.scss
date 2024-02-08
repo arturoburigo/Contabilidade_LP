@@ -9,6 +9,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave em todo o documento */
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     width: 100%;
