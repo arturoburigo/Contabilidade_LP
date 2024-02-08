@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+}
+
+.header-content {
+    background-color: #FFF;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    color: #2f3f79 ;
+    padding: 35px 60px;
+}
+
+.nav-container {
+    display: flex;
+    gap: 30px; /* Adiciona um espaço de 20px entre os elementos */
+    a{
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .logo-header{
+        margin-bottom: 60px;
+    }
+
+    .nav-container a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .nav-container a{
+        font-size: 12px;
+    }
+}
